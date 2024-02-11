@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+/* Configuracoes para toda a tela */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+/* Cor de fundo da tela */
+body {
+  background-color: #edf6f9;
+}
+/* Configuracoes para tudo dentro do main */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Primeira secao/ Secao Entrada / Secao esquerda */
+.secaoTextoEntrada {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo da página / Logo Alura*/
+#imagemLogo {
+  margin-top: 20px;
+  margin-left: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Caixa de Entrada de Texto */
+#inserirTexto {
+  width: 605px;
+  height: 450px;
+  outline: none;
+  margin-top: 100px;
+  background-color: #edf6f9;
+  border: none;
+  font-size: 25px;
+  color: #ff7d00;
+}
+/* Cor do texto temporário da caixa de entrada de texto */
+::placeholder {
+  color: #4c8077;
+}
+/* Texto sobre letras e acentos */
+.secaoTexto__Alerta {
+  padding-top: 5%;
+}
+/* Secao de botoes Cripto e Descripto */
+.botoes {
+  display: flex;
+  gap: 24px;
+  width: 90%;
+  padding-top: 5%;
+}
+/* Estilizacao do botao de Cripto */
+.buttonCripto {
+  background-color: #ff7d00;
+  color: white;
+  font-size: 16px;
+  border-radius: 24px;
+  width: 328px;
+  height: 67px;
+  border: 2px white;
+  border-style: outset;
+}
+/* Estilizacao do botao de Descripto */
+.buttonDescripto {
+  background-color: #4c8077;
+  color: white;
+  font-size: 16px;
+  border-radius: 24px;
+  width: 328px;
+  height: 67px;
+  border: 2px white;
+  border-style: outset;
+}
+/* Segunda secao/ Secao Saida / Secao direita */
+.secaoResultado {
+  width: 500px;
+  height: 700px;
+  margin: 40px;
+  border-radius: 32px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+/* Configuracoes da div quando nao ha mensagem */
+
+#semMensagem {
+  border-radius: 24px;
+  height: 100%;
+  margin-top: 10px;
+}
+
+/* Configuracoes do local que recebe o texto final */
+#textoResultado {
+  width: 100%;
+  height: 400px;
+  font-size: 1.5rem;
+  resize: none;
+  background-color: white;
+  outline: none;
+  border: none;
+  color: #ff7d00;
+}
+/* Div que só mostrará se tiver texto de entrada */
+#mostrarComMensagem {
+  height: 650px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 10px;
+  gap: 45px;
+}
+
+#mostrarSemMensagem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: #4c8077;
+}
+
+#aviso {
+  color: #4c8077;
+}
+
+#textoaux {
+  text-align: center;
+  color: #4c8077;
+}
+
+/* botão de copiar o texto de saída */
+#buttonCopiar {
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 400px;
+  font-size: 15px;
+  border: 1px solid #001524;
+  border-style: outset;
+  color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: #4c8077;
+}
+/* div contatos acima do rodapé*/
+.contatos {
+  display: flex;
+  gap: 5px;
+  font-size: 10px;
+  align-items: center;
+  margin-top: 10%;
+}
+/* logo github */
+.imgGit {
+  width: 25px;
+  height: 25px;
+}
+/* logo linkedin */
+.imglink {
+  width: 25px;
+  height: 25px;
+}
+/* Linha acima do rodapé*/
+footer hr {
+  width: 70%;
+  border-color: #0a3871;
+  opacity: 0.4;
+  margin: 10px auto;
+}
+/* Rodapé */
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
